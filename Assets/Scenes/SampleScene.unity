@@ -1220,6 +1220,7 @@ GameObject:
   - component: {fileID: 2073023351}
   - component: {fileID: 2073023350}
   - component: {fileID: 2073023352}
+  - component: {fileID: 2073023353}
   m_Layer: 0
   m_Name: NimboHouse
   m_TagString: Untagged
@@ -1339,6 +1340,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 6.4, y: 6.4}
   m_EdgeRadius: 0
+--- !u!114 &2073023353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2073023349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff7b737505726704195f4cffcdd24b76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2089747337
 PrefabInstance:
   m_ObjectHideFlags: 0
