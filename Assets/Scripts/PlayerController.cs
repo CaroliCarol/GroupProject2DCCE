@@ -45,7 +45,7 @@ public class PlayerController : MonoBehaviour
         {
             playerRb.AddForce(Vector3.up*jumpForce, ForceMode2D.Impulse);
             isOnGround = false;
-
+            //animator.SetFloat("NimboJump");
             //playerAnim.SetTrigger("Jump_trig");
         }
     }
