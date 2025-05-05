@@ -12,10 +12,10 @@ public class PlayerController : MonoBehaviour
     public float speed = 3.0f;
     private Rigidbody2D playerRb;
     private float horizontal;
+    public Animator animator;
 
-    // Animation Variables
-    Animator animator;
-
+    //private SpriteRenderer SpriteRenderer;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -28,6 +28,18 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         horizontal=Input.GetAxis("Horizontal");
+        animator.SetFloat("Horizontal",horizontal);
+        Debug.Log("Horizontal: " + horizontal);
+
+        /*if (horizontal <0) 
+        {
+            gameObject.SpriteRenderer.flipX=true;
+        }
+        else if (horizontal >0)
+        {
+            gameObject.SpriteRenderer.flipX=false;
+        }*/
+
         transform.Translate(Vector3.right * horizontal * Time.deltaTime * speed);
         if (Input.GetKeyDown(KeyCode.Space) && isOnGround && !gameOver)
         {
