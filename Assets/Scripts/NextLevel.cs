@@ -11,8 +11,8 @@ public class NextLevel : MonoBehaviour
     {
         if (outro.CompareTag("Player"))
         {
+            Debug.Log("O jogador entrou no trigger."); // Mensagem de debug
             SceneManager.LoadScene(Scene2);
         }
     }
-   
 }
