@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
@@ -29,7 +30,10 @@ public class PlayerController : MonoBehaviour
     {
         horizontal=Input.GetAxis("Horizontal");
         animator.SetFloat("Horizontal",horizontal);
-        
+        if (Input.touchCount > 0)
+        {
+            Touch touch = Input.GetTouch(0);
+        }
         //Debug.Log("Horizontal: " + horizontal);
 
         /*if (horizontal <0) 
