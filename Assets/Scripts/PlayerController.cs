@@ -29,6 +29,7 @@ public class PlayerController : MonoBehaviour
     {
         horizontal=Input.GetAxis("Horizontal");
         animator.SetFloat("Horizontal",horizontal);
+        
         //Debug.Log("Horizontal: " + horizontal);
 
         /*if (horizontal <0) 
